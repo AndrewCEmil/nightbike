@@ -16,4 +16,9 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		gameObject.transform.position = gameObject.transform.position + speed * direction;
 	}
+
+
+	void OnTriggerEnter(Collider other) {
+		Debug.Log ("TRIGGERED");
+	}
 }
